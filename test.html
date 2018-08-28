@@ -1,0 +1,48 @@
+<!doctype html>
+<head>
+
+<title>Visualizer | Web Audio API</title>
+
+</head>
+
+<body>
+
+<div id="container">
+
+  <div id="nav">
+    <ul>
+    </ul>
+  </div>
+
+  <div id="header">
+  </div>
+
+
+  <div id="wrapper">
+    <div id="content">
+
+      
+<div class="post">
+    <p><button style="display: block" disabled="true">Please wait, loading...</button>
+<canvas></canvas></p>
+
+<script src="js/utils.js"></script>
+<script src="js/visualize.js"></script>
+<script>
+var sample = new VisualizerSample();
+document.querySelector('button').addEventListener('click', function() {
+  sample.togglePlayback()
+});
+</script>
+
+  </p>
+</div>
+
+
+    </div>
+
+  </div>
+
+  </body>
+</html>
+
