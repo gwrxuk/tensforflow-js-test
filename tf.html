@@ -51,15 +51,7 @@ biases.print(); // output: [0, 1, 0, 1, 0]
 const d = tf.tensor2d([[1.0, 2.0], [3.0, 4.0]]);
 const d_squared = d.square();
 d_squared.print();
-      
-      const zeros = tf.zeros([3, 5]);
-      const initialValues = tf.zeros([5]);
-const biases = tf.variable(initialValues); // initialize biases
-biases.print(); // output: [0, 0, 0, 0, 0]
-
-const updatedValues = tf.tensor1d([0, 1, 0, 1, 0]);
-biases.assign(updatedValues); // update values of biases
-biases.print(); // output: [0, 1, 0, 1, 0]
+ 
       // Train the model using the data.
       model.fit(xs, ys, {epochs: 10}).then(() => {
         // Use the model to do inference on a data point the model hasn't seen before:
