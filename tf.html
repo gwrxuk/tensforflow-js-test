@@ -56,6 +56,10 @@ const f = tf.tensor2d([[5.0, 6.0], [7.0, 8.0]]);
 
 const e_plus_f = e.add(f);
 e_plus_f.print();
+      
+      
+      const sq_sum = e.add(f).square();
+sq_sum.print();
       // Train the model using the data.
       model.fit(xs, ys, {epochs: 10}).then(() => {
         // Use the model to do inference on a data point the model hasn't seen before:
